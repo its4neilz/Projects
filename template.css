@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+  }
+  
+  header {
+    background-color: #0066a1;
+    height: 150px;
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+    color: #FFFFFF;
+  }
+  
+  
+  nav {
+    float: left;
+    width: 10%;
+    background: #FFFFFF;
+    color: #0066a1;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    color: #0066a1;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    width: 90%;
+    background-color: #f1f1f1;
+      
+  }
+  
+  
+  
+  
+  section{
+    height: calc(100vh - 200px); 
+   
+  }
+  
+  
+  footer {
+    background-color: #0066a1;
+    height:5%;
+    /* padding: 5px; */
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    bottom:0;
+    position: fixed;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  .button {
+    top: 100px;
+    left: .5em;
+    width: 60px;
+    height:100px; 
+    color: black;
+  } 
+  
+  .button3 {
+    top: 30px;
+    left: .5em;
+    width: 50px;
+    height:0px; 
+    color: black;
+  } 
+  
+  
+  
+  
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #0066a1;
+    display: block;
+    border: none;
+    background: #fff;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .guide {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    border: none;
+    background: #0066a1;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  } 
+  
+  .dropdown-btn{
+    color:black;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    background-color: #0066a1;;
+    color: white;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: #0066a1;
+    color: #fff;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: white;;
+    color: white;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  

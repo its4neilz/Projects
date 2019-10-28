@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./template.css" />
+    <title>Title</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <section>
+              
+            <nav>
+                    
+                    <div class="sidenav">
+                                <button class="guide" id="hideButton" onclick="display()">Guide</button>
+                                <h2>Content Head</h2>
+
+                            <button class="dropdown-btn">Content Dropdown
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+
+                            <div class="dropdown-container">
+                                <a href="#">Content</a>
+                                <a href="#">Content</a>
+                                
+                            </div>
+
+                            <button class="dropdown-btn">Content Dropdown 
+                                    <i class="fa fa-caret-down"></i>
+                            </button>
+
+                                <div class="dropdown-container">
+                                    <a href="#">Content</a>
+                                    <a href="#">Content</a>
+                                
+                                </div>
+                                     
+                    </div>
+
+            </nav>
+        
+            <script>
+                    //Button Listener für die Nav-Bar DropDown-Buttons
+
+                    //Array aller dropdown-Buttons
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      //pro aufruf wird zwischen active und nicht active gewechselt
+                      this.classList.toggle("active");
+                      //nextElementSibling übergibt das direkt darauf folgende objekt -> den dropdowncontainer
+                      var dropdownContent = this.nextElementSibling;
+                      //es wechselt immer der zustand zwischen "block"-> wird angezeigt und "none" -> wird nicht angezeigt
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+            </script>
+        
+
+        <article> 
+            
+            <div id="guide" style="display:none">
+                <h2>Content</h2>
+                
+            </div>
+     
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
